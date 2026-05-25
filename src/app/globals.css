@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 34 40% 97%;
+  --foreground: 220 18% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 220 18% 12%;
+  --primary: 178 54% 28%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 30 48% 92%;
+  --secondary-foreground: 220 18% 18%;
+  --muted: 210 18% 92%;
+  --muted-foreground: 218 10% 42%;
+  --accent: 355 70% 60%;
+  --accent-foreground: 0 0% 100%;
+  --destructive: 0 72% 51%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 214 18% 82%;
+  --input: 214 18% 82%;
+  --ring: 178 54% 28%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  min-height: 100vh;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+.lyrics-scrollbar {
+  scrollbar-color: hsl(var(--primary) / 0.45) transparent;
+  scrollbar-width: thin;
+}
